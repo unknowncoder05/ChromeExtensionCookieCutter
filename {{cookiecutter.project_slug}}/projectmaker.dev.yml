@@ -1,0 +1,28 @@
+version: "1"
+
+commands:
+  validate:
+    label: "Validate Extension"
+    description: "Check Manifest V3 structure and required extension files."
+    run: "npm install && npm run validate"
+    service: extension
+  build:
+    label: "Build Extension Package"
+    description: "Validate and copy the Chrome extension into dist/."
+    run: "npm install && npm run build"
+    service: extension
+
+services:
+  extension:
+    type: frontend
+    cpu: 0.25
+    memory: 256
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/workspace
+      - extension_node_modules:/workspace/node_modules
+
+volumes:
+  extension_node_modules:

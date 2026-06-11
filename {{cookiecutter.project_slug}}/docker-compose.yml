@@ -1,0 +1,8 @@
+services:
+  extension:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: npm run smoke:server
+    ports:
+      - "${FRONTEND_PORT:-5173}:5173"

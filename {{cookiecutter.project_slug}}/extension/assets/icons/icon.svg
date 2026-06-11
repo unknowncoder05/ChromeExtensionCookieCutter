@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Extension icon</title>
+  <rect width="128" height="128" rx="28" fill="#111827"/>
+  <path d="M28 72c0-24.3 17-44 38-44 18.8 0 34.4 15.7 37.5 36.3H83.8C81.2 53.9 74.2 46 66 46c-10.5 0-19 11.6-19 26s8.5 26 19 26c8.2 0 15.2-7.9 17.8-18.3h19.7C100.4 100.3 84.8 116 66 116c-21 0-38-19.7-38-44Z" fill="#ffffff"/>
+  <circle cx="66" cy="72" r="13" fill="#2563eb"/>
+</svg>

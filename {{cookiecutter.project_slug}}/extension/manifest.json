@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "{{ cookiecutter.extension_name }}",
+  "short_name": "{{ cookiecutter.extension_short_name }}",
+  "description": "{{ cookiecutter.extension_description }}",
+  "version": "0.1.0",
+  "homepage_url": "{{ cookiecutter.homepage_url }}",
+  "action": {
+    "default_title": "{{ cookiecutter.extension_name }}",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "options_page": "options/options.html",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "icons": {
+    "16": "assets/icons/icon.svg",
+    "32": "assets/icons/icon.svg",
+    "48": "assets/icons/icon.svg",
+    "128": "assets/icons/icon.svg"
+  }
+}

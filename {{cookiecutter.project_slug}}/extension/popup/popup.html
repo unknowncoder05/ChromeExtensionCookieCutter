@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ cookiecutter.extension_name }}</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="popup__header">
+        <img src="../assets/icons/icon.svg" alt="" width="32" height="32">
+        <div>
+          <h1>{{ cookiecutter.extension_name }}</h1>
+          <p id="tab-status">Checking active tab...</p>
+        </div>
+      </header>
+
+      <section class="panel" aria-live="polite">
+        <div class="label">Current page</div>
+        <div id="page-title" class="value">Unavailable</div>
+        <div id="page-url" class="url">No active tab</div>
+      </section>
+
+      <div class="actions">
+        <button id="run-action" type="button">Run Page Action</button>
+        <button id="open-options" class="secondary" type="button">Options</button>
+      </div>
+
+      <p id="message" class="message"></p>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

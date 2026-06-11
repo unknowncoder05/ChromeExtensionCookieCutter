@@ -1,0 +1,16 @@
+- title: "Define the first workflow for {{cookiecutter.project_name}}"
+  description: "Choose the primary browser workflow, required pages, host permissions, and data storage needs."
+  priority: high
+  status: pending
+- title: "Customize extension permissions and content script matches"
+  description: "Narrow manifest permissions and host matches to the minimum required scope."
+  priority: high
+  status: pending
+- title: "Implement popup and options behavior"
+  description: "Connect popup controls and persisted options to the background service worker."
+  priority: medium
+  status: pending
+- title: "Package and validate Chrome Web Store assets"
+  description: "Run validation, build the dist artifact, and prepare screenshots, icons, and store copy."
+  priority: medium
+  status: pending

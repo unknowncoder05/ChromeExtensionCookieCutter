@@ -1,0 +1,20 @@
+{
+  "name": "{{ cookiecutter.project_slug_dashed }}",
+  "version": "0.1.0",
+  "description": "{{ cookiecutter.extension_description }}",
+  "type": "module",
+  "private": true,
+  "author": "{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>",
+  "scripts": {
+    "validate": "node scripts/validate-extension.mjs",
+    "build": "npm run validate && node scripts/build.mjs",
+    "smoke:server": "node scripts/smoke-server.mjs",
+    "test": "npm run validate"
+  },
+  "keywords": [
+    "chrome-extension",
+    "manifest-v3",
+    "projectmaker"
+  ],
+  "devDependencies": {}
+}

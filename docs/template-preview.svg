@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Chrome extension template preview</title>
+  <desc id="desc">Preview of a browser extension popup, background worker, content script, and options page.</desc>
+  <rect width="1200" height="675" fill="#f5f7fb"/>
+  <rect x="72" y="64" width="1056" height="548" rx="18" fill="#ffffff" stroke="#d7dde8"/>
+  <rect x="72" y="64" width="1056" height="62" rx="18" fill="#1f2937"/>
+  <circle cx="110" cy="95" r="9" fill="#ef4444"/>
+  <circle cx="140" cy="95" r="9" fill="#f59e0b"/>
+  <circle cx="170" cy="95" r="9" fill="#22c55e"/>
+  <text x="212" y="103" font-family="Inter, Arial, sans-serif" font-size="22" fill="#f9fafb">ProjectMaker Chrome Extension Starter</text>
+  <rect x="120" y="176" width="304" height="358" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="148" y="220" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#111827">Popup</text>
+  <rect x="148" y="250" width="248" height="44" rx="8" fill="#2563eb"/>
+  <text x="184" y="279" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Run Page Action</text>
+  <rect x="148" y="316" width="248" height="72" rx="8" fill="#ffffff" stroke="#d7dde8"/>
+  <text x="168" y="348" font-family="Inter, Arial, sans-serif" font-size="15" fill="#334155">Active tab status</text>
+  <text x="168" y="372" font-family="Inter, Arial, sans-serif" font-size="13" fill="#64748b">Ready for content scripts</text>
+  <rect x="148" y="416" width="248" height="42" rx="8" fill="#e2e8f0"/>
+  <text x="190" y="443" font-family="Inter, Arial, sans-serif" font-size="15" fill="#1f2937">Open Options</text>
+  <rect x="480" y="176" width="276" height="168" rx="12" fill="#ecfdf5" stroke="#86efac"/>
+  <text x="508" y="220" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#064e3b">Background</text>
+  <text x="508" y="254" font-family="Inter, Arial, sans-serif" font-size="15" fill="#166534">Service worker message bus</text>
+  <text x="508" y="284" font-family="Inter, Arial, sans-serif" font-size="15" fill="#166534">Install and lifecycle hooks</text>
+  <rect x="480" y="366" width="276" height="168" rx="12" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="508" y="410" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#1e3a8a">Content Script</text>
+  <text x="508" y="444" font-family="Inter, Arial, sans-serif" font-size="15" fill="#1d4ed8">Page context actions</text>
+  <text x="508" y="474" font-family="Inter, Arial, sans-serif" font-size="15" fill="#1d4ed8">DOM-safe notifications</text>
+  <rect x="812" y="176" width="268" height="358" rx="12" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="840" y="220" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#7c2d12">Options</text>
+  <text x="840" y="254" font-family="Inter, Arial, sans-serif" font-size="15" fill="#9a3412">chrome.storage settings</text>
+  <rect x="840" y="292" width="212" height="38" rx="8" fill="#ffffff" stroke="#fed7aa"/>
+  <text x="860" y="317" font-family="Inter, Arial, sans-serif" font-size="14" fill="#9a3412">Enable toolbar badge</text>
+  <rect x="840" y="350" width="212" height="38" rx="8" fill="#ffffff" stroke="#fed7aa"/>
+  <text x="860" y="375" font-family="Inter, Arial, sans-serif" font-size="14" fill="#9a3412">Notification style</text>
+  <rect x="840" y="428" width="104" height="40" rx="8" fill="#ea580c"/>
+  <text x="872" y="454" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Save</text>
+</svg>

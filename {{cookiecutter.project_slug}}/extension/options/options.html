@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ cookiecutter.extension_name }} Options</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="settings">
+      <header>
+        <h1>{{ cookiecutter.extension_name }}</h1>
+        <p>Extension settings</p>
+      </header>
+
+      <form id="options-form">
+        <label class="row">
+          <span>
+            <strong>Toolbar badge</strong>
+            <small>Show an active badge when a page finishes loading.</small>
+          </span>
+          <input id="show-badge" type="checkbox">
+        </label>
+
+        <label>
+          <span>Notification style</span>
+          <select id="notification-style">
+            <option value="quiet">Quiet</option>
+            <option value="prominent">Prominent</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Highlight color</span>
+          <input id="highlight-color" type="color">
+        </label>
+
+        <button type="submit">Save Settings</button>
+        <p id="save-status" aria-live="polite"></p>
+      </form>
+    </main>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>
