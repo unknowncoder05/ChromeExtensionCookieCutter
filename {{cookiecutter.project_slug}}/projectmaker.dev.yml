@@ -4,12 +4,12 @@ commands:
   validate:
     label: "Validate Extension"
     description: "Check Manifest V3 structure and required extension files."
-    run: "npm install && npm run validate"
+    run: "./scripts/install-deps.sh && npm run validate"
     service: extension
   build:
     label: "Build Extension Package"
     description: "Validate and copy the Chrome extension into dist/."
-    run: "npm install && npm run build"
+    run: "./scripts/install-deps.sh && npm run build"
     service: extension
 
 services:
