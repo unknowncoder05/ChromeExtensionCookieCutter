@@ -1,0 +1,39 @@
+minimum_pre_commit_version: "4.0.0"
+default_install_hook_types: [pre-commit]
+fail_fast: false
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+        args: [--maxkb=1024]
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks-docker
+
+  - repo: local
+    hooks:
+      - id: codeswarm-quality
+        name: CodeSwarm staged quality policy
+        entry: python3 scripts/codeswarm-quality.py --staged
+        language: system
+        pass_filenames: false
+        always_run: true
+      - id: chrome-extension-validate
+        name: Chrome extension manifest and source validation
+        entry: npm run validate
+        language: system
+        files: ^(extension|scripts)/.*\.(css|html|js|json|mjs)$|^package\.json$
+        pass_filenames: false
